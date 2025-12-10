@@ -1,0 +1,262 @@
+/* =====================================================
+   BASE RESET
+===================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+/* =====================================================
+   HERO HEADER
+===================================================== */
+.hero-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* =======================
+   HERO NAVIGATION (MENU)
+========================= */
+.hero-nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+.hero-nav a {
+  display: block;
+  padding: 15px 0;
+  width: 100%;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 14px;
+  border-right: 1px solid #ccc;
+}
+
+.hero-nav a:last-child {
+  border-right: none;
+}
+
+.hero-nav i {
+  color: #3b82f6;
+  margin-right: 6px;
+}
+
+/* ======================================
+   RESPONSIVE HEADER (MOBILE)
+====================================== */
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-nav {
+    flex-direction: column;
+  }
+
+  .hero-nav a {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* =====================================================
+   SECTION BOX GENERAL STYLE
+===================================================== */
+.section-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.section-title .icon {
+  width: 26px;
+  margin-right: 8px;
+}
+
+.section-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.timeline {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* =====================================================
+   PROFILE SECTIONS (GRID)
+===================================================== */
+
+#profile-sections {
+  width: 100%;
+}
+
+/* Tablet & Desktop handled by Bootstrap grid in HTML */
+
+/* Mobile additional spacing */
+@media (max-width: 576px) {
+  #profile-sections .section-box {
+    padding: 18px;
+  }
+}
+
+/* =====================================================
+   CERTIFICATES
+===================================================== */
+.cert-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+.project-table td {
+  padding: 4px 0;
+  vertical-align: top;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2e3b3b;
+}
+
+.project-item img {
+  height: 170px;
+  object-fit: cover;
+}
+
+/* Mobile adjust */
+@media (max-width: 576px) {
+  .project-item img {
+    height: 130px;
+  }
+}
+
+/* =====================================================
+   SOCIAL ICONS
+===================================================== */
+.social-icons a {
+  color: #3b82f6;
+  font-size: 1.05rem;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.icon-round {
+  background: #0d6efd;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* =====================================================
+   OPTIONAL CARD UI
+===================================================== */
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+.card-body p {
+  font-size: 15px;
+}
+
+/* =====================================================
+   PROGRESS BAR (ANIMATION JS USES)
+===================================================== */
+.progress {
+  height: 14px;
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #199cdb;
+  height: 100%;
+  width: 0%;
+  transition: width 1.2s ease;
+}
+
+/* =====================================================
+   SMALL SCREEN ADJUSTS
+===================================================== */
+@media (max-width: 992px) {
+  .project-item img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+  .card-body p {
+    font-size: 14px;
+  }
+}
